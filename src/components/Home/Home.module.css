@@ -1,69 +1,59 @@
 *{
+    font-family: 'Manrope', sans-serif;
     margin: 0;
     padding: 0;
+    font-size: 1rem;
 }
 
-.homeLandingPageContainner{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+.mainContainner{
+    height: 88svh;
     width: 100%;
-    height: 70svh;
-    background-color: #252525;
-}
-
-.homeLandingPageContainner img{
-    width: 100%;
-    height: 100%;
-}
-
-.homeLandingPageContent{
     display: flex;
     flex-direction: column;
-    width: 100%;
-    height: 100%;
-    align-items: space-between;
-    background-color: inherit;
+    justify-content: center;
+    align-items: center;
+    background-image: url("/Home/landingPage.png");
+    background-size: 100% 100%; 
 }
 
-.homeLandingPageText{
-    background-color: inherit;
-    width: 100%;
-    height: 100%;
+.Content{
+    width: 90%;
+    padding-left: 5%;
+    padding-right: 5%;
+    background-image: url("/Header/k_black.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    top: 6svh;
+    bottom: 6svh;
+    opacity: 0.1;
+    overflow: hidden;
 }
 
-.homeLandingPageText h2{
-    color: #8363ff;
-    background-color: inherit;
-    font-size: 2rem;
+.ContentText p{
+    color: #141414;
+    font-size: 1.4rem;
+    font-weight: 500;
     padding-left: 2.3rem;
-    padding-top: 1.7rem;
-}
+    padding-right: 2.3rem;
+    text-align: center;
+    span{
+        background-color: #8363ff;
+        color: black;
+        border-radius: 100rem;
+        font-style: italic;
+        font-size: 1.4rem;
+        font-weight: 800;
+        padding: 0.5rem;
+        @media only screen and (max-width: 1000px){
+            font-size: 1.2rem;
+            font-weight: 800;
+            padding: 0.2rem 0.7rem;
+        }
+    }
+    @media only screen and (max-width: 1000px){
+        font-size: 1.2rem;
+        margin: 0% 2.5%;
 
-.homeLandingPageText p{
-    color: #a5a5a5;
-    background-color: inherit;
-    font-size: 0.9rem;
-    padding-left: 2.3rem;
-    padding-top: 0.7rem;
-}
-
-.homeLandingPageButton{
-    background-color: inherit;
-    padding-left: 2.3rem;
-    padding-bottom: 2.3rem;
-}
-
-.homeLandingPageButton button{
-    color: black;
-    font-weight: 600;
-    background-color: #8363ff;
-    border: none;
-    font-size: 0.65rem;
-    padding: 0.3rem;
-}
-
-.homeLandingPageButton button:hover{
-    background-color: #9581e7;
+    }
 }

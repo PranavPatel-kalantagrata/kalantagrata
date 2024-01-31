@@ -4,23 +4,45 @@ import HomeCSS from './Home.module.css';
 function Home() {
     return (
         <>
-        <div className={HomeCSS.homeLandingPageContainner}>
+        <div className={HomeCSS.mainContainner}>
+
+            {/* <div className={HomeCSS.Content}> */}
+
+            <div className={HomeCSS.Content}>
             
-            <img src="src/assets/landingPage.png" alt="Landing Page"/>
-            
-            <div className={HomeCSS.homeLandingPageContent}>
-                
-                <div className={HomeCSS.homeLandingPageText}>
-                    <h2>YOUR<br/>ONE-STOP-SHOP</h2>
-                    <p>For all your graphic desiging needs.</p>
-                </div>
-                
-                <div className={HomeCSS.homeLandingPageButton}>
-                    <button>Get Started</button>
-                </div>
-                
             </div>
+            
+            <div className={HomeCSS.ContentText}>
+            
+                <p>Your <span>ONE-STOP-SHOP</span> for seamless 
+                graphic design solutions and cutting-edge web development.
+                </p>
+
+            </div>
+
+            {/* </div> */}
+
         </div>
+
+
+
+
+
+
+
+
+        {/* <div className={HomeCSS.ourServicesContainner} id="ourServices">
+            <h1>Our Services</h1>
+        </div>
+
+        <div>
+            <p className={HomeCSS.ourServicesHeading}>Social Media Management</p>
+            <p className={HomeCSS.ourServicesHeading}>Real Estate Photography & Videography</p>
+            <p className={HomeCSS.ourServicesHeading}>Vectorizing</p>
+            <p className={HomeCSS.ourServicesHeading}>Photo Editing</p>
+            <p className={HomeCSS.ourServicesHeading}>Video Editing</p>
+        </div> */}
+
         </>
         
     )
