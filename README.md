@@ -1,1 +1,1 @@
-# Portfolio Website
+Portfolio website for showcasing artworks and projects.
