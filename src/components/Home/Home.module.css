@@ -12,42 +12,41 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url("/Home/landingPage.png");
-    background-size: 100% 100%; 
+    background-color: #141414;
+    background-size: 100% 100%;
 }
 
 .Content{
     width: 90%;
     padding-left: 5%;
     padding-right: 5%;
-    background-image: url("/Header/k_black.png");
+    background-image: url("/Logos/k_black.png");
     background-repeat: no-repeat;
     background-position: center;
     position: absolute;
     top: 6svh;
     bottom: 6svh;
-    opacity: 0.1;
+    opacity: 0.125;
     overflow: hidden;
 }
 
 .ContentText p{
-    color: #141414;
+    color: #555555;
     font-size: 1.4rem;
     font-weight: 500;
     padding-left: 2.3rem;
     padding-right: 2.3rem;
     text-align: center;
     span{
-        background-color: #8363ff;
-        color: black;
-        border-radius: 100rem;
-        font-style: italic;
         font-size: 1.4rem;
         font-weight: 800;
+        background-color: #333333;
+        color: white;
+        border-radius: 100rem;
+        font-style: italic;
         padding: 0.5rem;
         @media only screen and (max-width: 1000px){
             font-size: 1.2rem;
-            font-weight: 800;
             padding: 0.2rem 0.7rem;
         }
     }

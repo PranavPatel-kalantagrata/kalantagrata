@@ -12,7 +12,7 @@ function Footer() {
             <nav className={FooterCSS.footerContainner}>
 
                     <div className={FooterCSS.footerLogoContainner}>
-                        <Link to="/"><img src="/Footer/k_white.png" alt="Logo"/></Link>
+                        <Link to="/"><img src="/Logos/k_white.png" alt="Logo"/></Link>
                     </div>  
 
                     <div className={FooterCSS.footerCopyrightContainner}>

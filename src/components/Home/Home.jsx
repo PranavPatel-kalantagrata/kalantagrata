@@ -15,7 +15,7 @@ function Home() {
             <div className={HomeCSS.ContentText}>
             
                 <p>Your <span>ONE-STOP-SHOP</span> for seamless 
-                graphic design solutions and cutting-edge web development.
+                graphic design visuals and cutting-edge web development.
                 </p>
 
             </div>

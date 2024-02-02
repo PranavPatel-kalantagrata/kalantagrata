@@ -10,7 +10,7 @@
   flex-direction: row;
   justify-content: space-between;
   height: 6svh;
-  background-color: #a5a5a5;
+  background-color: black;
 }
 
 .headerLogoContainner{
@@ -26,7 +26,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  color: black;
+  color: white;
   font-weight: 700;
   text-decoration: none;
 }
@@ -80,8 +80,4 @@
 
 .headerNavbarContainner a:hover{
   color: white;
-}
-
-.headerNavbarContainner a:focus{
-  color: black;
 }

@@ -11,9 +11,9 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-image: url("/About/landingPage.png");
+    background-color: #141414;
     background-size: 100% 100%; 
-    filter: grayscale();
+    transition: 500ms;
 }
 
 .Content{
@@ -30,6 +30,7 @@
 .ContentLogo{
     width: 50rem;
     padding-right: 5%;
+    opacity: 0.8;
     @media only screen and (max-width: 1000px){
         width: 8rem;
         padding-bottom: 5%;
@@ -42,22 +43,43 @@
 }
 
 .Content p{
-    font-weight: 500;
+    color: #555555;
     font-size: 1.2rem;
-    color: #333333;
-    span{
-        font-weight: 800;
+    font-weight: 500;
+    .wordMyName{
         font-size: 1.2rem;
-        color: #141414;
+        font-weight: 800;
+        color: white;
+        background-color: #333333;
+        border-radius: 100rem;
+        font-style: italic;
+        padding: 0.14rem 0.6rem;
         @media only screen and (max-width: 1000px){
             font-size: 1rem;
+            padding: 0.1rem 0.6rem;
+            background-color: brown;
         }    
+    }
+    .wordBrandName{
+        font-size: 1.2rem;
+        font-weight: 800;
+        color: white;
+        @media only screen and (max-width: 1000px){
+            font-size: 1rem;
+            font-weight: 800;
+            color: white;
+        }
+    }
+    .wordEmail{
+        text-decoration: none;
     }
     @media only screen and (max-width: 1000px){
         font-size: 1rem;
         /* padding: 0 5%; */
-        span{
-            font-size: 1rem;
-        }
+        
     }
+}
+
+.Content .wordMyName:hover{
+    background-color: brown;
 }

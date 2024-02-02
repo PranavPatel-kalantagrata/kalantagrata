@@ -8,15 +8,15 @@ function Header() {
             <nav className={HeaderCSS.headerContainner}>
 
                     <div className={HeaderCSS.headerLogoContainner}>
-                        <Link to="/"><img src="/Header/k_black.png" alt="Logo"/>kalantagrata</Link>
+                        <Link to="/"><img src="/Logos/k_white.png" alt="Logo"/>kalantagrata</Link>
                     </div>  
 
                     <div className={HeaderCSS.headerNavbarContainner}>
                         <ul>
-                            <li> <NavLink to="/" style={({isActive})=>{return {color: isActive? "black":"",};}}> Home </NavLink> </li>
+                            <li> <NavLink to="/" style={({isActive})=>{return {color: isActive? "#d5d5d5":"",};}}> Home </NavLink> </li>
                             {/* <li> <NavLink to="/Services"> Services </NavLink> </li> */}
-                            <li> <NavLink to="/Projects" style={({isActive})=>{return {color: isActive? "black":"",};}}> Projects </NavLink> </li>
-                            <li> <NavLink to="/About" style={({isActive})=>{return {color: isActive? "black":"",};}}> About </NavLink> </li>
+                            <li> <NavLink to="/BrandArt" style={({isActive})=>{return {color: isActive? "#d5d5d5":"",};}}> Brand Art </NavLink> </li>
+                            <li> <NavLink to="/About" style={({isActive})=>{return {color: isActive? "#d5d5d5":"",};}}> About </NavLink> </li>
                         </ul>
                     </div>
 

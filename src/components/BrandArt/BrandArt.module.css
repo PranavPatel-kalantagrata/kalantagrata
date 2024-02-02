@@ -1,0 +1,40 @@
+*{
+    font-family: 'Manrope', sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+}
+
+.mainContainner{
+    background-color: #141414;
+    height: 88svh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+
+
+
+
+.artMainContainner, .artCodeContainner{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+
+.artMainContainner{
+    background-color: burlywood;
+    height: 100%;
+}
+
+.artCodeContainner{
+    background-color: brown;
+    height: 100%;
+}
