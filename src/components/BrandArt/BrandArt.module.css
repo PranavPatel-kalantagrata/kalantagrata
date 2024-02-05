@@ -10,31 +10,113 @@
     height: 88svh;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
     padding-left: 3%;
     padding-right: 3%;
 }
 
 
-
-
-
-.artMainContainner, .artCodeContainner{
+.artContainner{
     width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
-    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.artContainner svg{
+    color: #d5d5d5;
+    width: 80%;
+    height: auto;    
 }
 
 
-.artMainContainner{
-    background-color: burlywood;
-    height: 100%;
+
+
+
+.topLeft{
+    stroke-dasharray: 108.16999816894531;
+    stroke-dashoffset: 108.16999816894531;
+    animation: motionTopL 6s ease-in-out 4.25s 2 alternate;
+}
+@keyframes motionTopL{
+    100%{
+        stroke-dashoffset: 0;
+    }
+    40%{
+        stroke-dashoffset: 0;
+    }
+    0%{
+        stroke-dashoffset: 108.16999816894531;
+    }
 }
 
-.artCodeContainner{
-    background-color: brown;
-    height: 100%;
+.topRight{
+    stroke-dasharray: 108.17001342773438;
+    stroke-dashoffset: 108.17001342773438;
+    animation: motionTopR 6s ease-in-out 4.25s 2 alternate;
 }
+@keyframes motionTopR{
+    100%{
+        stroke-dashoffset: 0;
+    }
+    40%{
+        stroke-dashoffset: 0;
+    }
+    0%{
+        stroke-dashoffset: 108.17001342773438;
+    }
+}
+
+.curve{
+    stroke-dasharray: 447.91448974609375;
+    stroke-dashoffset: 447.91448974609375;
+    animation: motionCurve 3.75s ease-in-out 7s 2 alternate;
+}
+@keyframes motionCurve{
+    100%{
+        stroke-dashoffset: 0;
+    }
+    40%{
+        stroke-dashoffset: 0;
+    }
+    0%{
+        stroke-dashoffset: 447.91448974609375;
+    }
+}
+
+.vertical{
+    stroke-dasharray: 118.12000274658203;
+    stroke-dashoffset: 118.12000274658203;
+    animation: motionVertical 10.30s ease-in-out 0s 2 alternate;
+}
+@keyframes motionVertical{
+    100%{
+        stroke-dashoffset: 0;
+    }
+    40%{
+        stroke-dashoffset: 0;
+    }
+    0%{
+        stroke-dashoffset: 118.12000274658203;
+    }
+}
+
+
+/* Animation #2 */
+
+/* animation: dashVertical 10.30s ease-in-out 0s 2 forwards; */
+
+/* @keyframes dashVertical{
+    100%{
+        stroke-dasharray: 11.81200027;
+        stroke-dashoffset: 0;
+    }
+    0%{
+        stroke-dasharray: 118.12000274658203;
+        stroke-dashoffset: 118.12000274658203;
+    }
+} */

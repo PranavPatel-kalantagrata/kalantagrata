@@ -16,17 +16,18 @@
     background-size: 100% 100%;
 }
 
-.Content{
+.ContentLogo{
     width: 90%;
     padding-left: 5%;
     padding-right: 5%;
-    background-image: url("/Logos/k_black.png");
+    /* background-image: url("/Logos/k_black.png"); */
+    background-image: url("/Logos/kalantagrata.svg");
     background-repeat: no-repeat;
     background-position: center;
     position: absolute;
     top: 6svh;
     bottom: 6svh;
-    opacity: 0.125;
+    opacity: 0.3;
     overflow: hidden;
 }
 

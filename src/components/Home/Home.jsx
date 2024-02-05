@@ -8,7 +8,7 @@ function Home() {
 
             {/* <div className={HomeCSS.Content}> */}
 
-            <div className={HomeCSS.Content}>
+            <div className={HomeCSS.ContentLogo}>
             
             </div>
             
