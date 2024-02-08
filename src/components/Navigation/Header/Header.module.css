@@ -5,7 +5,7 @@
   font-size: 1rem;
 }
   
-.headerContainner{
+.mainContainner{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -13,7 +13,7 @@
   background-color: black;
 }
 
-.headerLogoContainner{
+.logoContainner{
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -21,7 +21,7 @@
   margin: 1% 1% 1% 3%;
 }
 
-.headerLogoContainner a{
+.logoContainner a{
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -31,17 +31,23 @@
   text-decoration: none;
 }
 
-.headerLogoContainner img{
+.logoContainner img{
   width: auto;
   height: 1.4rem;
 }
 
-.headerLogoContainner img{
+.logoContainner img{
   padding-right: 0.5rem;
 }
 
-.headerNavbarContainner{
-  flex-grow: 1;
+
+
+
+
+
+.navbarContainner{
+  /* flex-grow: 1; */
+  width: 100%;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -50,24 +56,21 @@
   overflow: auto;
 }
 
-.headerNavbarContainner ul{
+.navbarContainner ul{
   width: 100%;
   height: 100%;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
   margin-right: 3.5%;
-  @media only screen and (max-width: 1000px){
-    margin-right: 5%;
-  }
 }
 
-.headerNavbarContainner li{
+.navbarContainner li{
   list-style: none;
   padding-left: 5%;
 }
 
-.headerNavbarContainner a{
+.navbarContainner a{
   text-decoration: none;
   color: #555555;
   font-weight: bold;
@@ -78,6 +81,121 @@
   height: 100%;
 }
 
-.headerNavbarContainner a:hover{
+.navbarContainner a:hover{
   color: white;
 }
+
+
+
+
+
+.hamburgerContainner{
+  position: absolute;
+  top: 1.5%;
+  right: 3%;
+  visibility: hidden;
+  height: 3svh;
+  width: 3svh;
+  background-image: url("/Logos/hamburger.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  z-index: 2;
+}
+
+
+
+
+.input{
+  display: none;
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  z-index: 3;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 1000px){
+  .input{
+    display: inline;
+    opacity: 0;
+    height: 6svh;
+    width: 12svh;
+  }
+  .navbarContainner{
+    visibility: hidden;
+  }
+  .hamburgerContainner{
+    visibility: visible;
+  }
+  input:checked + .mainContainner{
+    height: 100svh;
+    width: 100%;
+    position: absolute;
+    overflow-y: hidden;
+    top: 0%;
+    z-index: 1;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    box-sizing: border-box;
+    
+    .hamburgerContainner{
+      background-image: url("/Logos/hamburgerCross.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+    }
+
+
+
+    .logoContainner{
+      height: 5svh;
+    }
+    .logoContainner img{
+      width: auto;
+      height: 1.38rem;
+      padding-right: 0.5rem;
+    }
+
+
+
+    .navbarContainner{
+      visibility: visible;
+      flex-grow: 1;
+      padding-bottom: 3.5rem;
+      height: 88svh;
+      overflow: hidden;
+    }
+    
+    ul{
+      background-color: black;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      justify-content: flex-end;
+      margin: 0%;
+    }
+    li{
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      width: 100%;
+      height: 3.5rem;
+      border-block-start: 0.1rem solid #33333388;
+    }
+    li:nth-last-of-type(1){
+      border-block-end: 0.1rem solid #33333388;
+    }
+    .navbarContainner a{
+      width: 100%;
+      padding-right: 3.5%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      justify-content: center;
+      height: 100%;
+    }
+  }
+} 
